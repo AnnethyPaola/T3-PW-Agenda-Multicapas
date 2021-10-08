@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Copse&family=Oranienbaum&family=Poppins&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Agenda</title>
+</head>
+<body >
+      <!--Head(Cabecera)-->
+     <div class="container">
+        <div class="container-head"> <h2>Agenda de Contactos</h2></div>
+    <form id="form" >
+         <!--Formulario de datos(DataForm)  -->
+    <div class="Dataform">
+        <!--Coloque los placeholder en español para comodidad del usuario-->
+        <!-- Place the placeholders in Spanish for the user's convenience-->
+        <input type="" placeholder="Nombre" id="name"> 
+        <input type=""  placeholder="Apellido" id="lastName">
+        <input type=""  placeholder="Telefono" id="phone">
+        <!-- Add contact button (Boton agregar contacto)-->
+        <button class="btn-add-contact" type="submit" id="Send"> Agregar Contacto</button>
+    </form>
+</div>
+<!--Boton que muestra la tabla de los contactos existentes(Button that shows the table of existing contacts)-->
+  <button id="show-button" onclick="show()" class="btn-show" >Mostrar lista de contactos</button>
+      <div id="table-date">
+        <!--Boton que oculta la tabla de los contactos existentes(Button that hides the table of existing contacts)-->
+          <button id="show-button" onclick="hide()" class="btn-hide">Ocultar lista de contactos</button>
+          <!-- Container of the existing contacts header (Contenedor de el encabezado contactos existentes)-->
+        <div class="container-Existing-Contacts"><h2>Contactos existentes</h2></div>
+           <!--Table where the data is displayed(Tabla donde se muestran los datos)  -->
+           <!-- List of contacts (Listado de contactos) -->
+           <!--Container to scroll the table(Contenedor para darle un scroll a la tabla)-->
+             <div id="Scroll">
+          <table >
+     <thead> 
+     <th>Nombre</th>
+     <th>Apellido</th>
+     <th>Telefono</th>
+ </thead>
+ <tbody id="data">
+ </tbody>
+ </table>
+ </div>
+    </div> 
+      </div>
+<script src="js/acciones.js"></script>
+</body>
+</html>

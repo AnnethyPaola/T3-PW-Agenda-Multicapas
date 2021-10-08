@@ -1,0 +1,133 @@
+*,::after,*::before{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+html{
+font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+body{
+  background-color:rgb(63, 57, 57);
+  color: white;
+}
+.container{
+   height: 100vh;
+   width: 70vh;
+   margin: auto;
+}
+.container-head{
+   width: 550px;
+   background: rgba( 0, 0, 0, .4);
+   margin: 0 auto;
+   margin-top: 15%;
+   padding: 15px;
+   color: white;
+   border-radius: 15px;
+   text-align: center;
+   margin-bottom: 1rem;
+   font-size: 1.6rem;
+}
+.container-Existing-Contacts{
+    width: 510px;
+   background: rgba( 202, 144, 232 , .4);
+   padding: 15px;
+   color: white;
+   margin: 1rem 0rem;
+   text-align: center;
+}
+.Dataform{
+   display: block;
+   width: 80%;
+   margin: 1rem 20%;
+   display: flex;
+   flex-direction: column ;
+}
+.Dataform input{
+   margin: 1rem 0rem;
+   line-height: 3rem;
+   background: none;
+   outline: 0;
+   border: 0;
+   color: white;
+   width: auto;
+   font-size: 15px;
+}
+.Dataform input:active{
+   border-bottom: 1px solid blueviolet;
+}
+
+.Dataform input:focus{
+   border-bottom: 1px solid blueviolet;
+}
+
+.Dataform button{
+   margin: 5rem 0rem;
+   background-color: blueviolet;
+   border: 0;
+   margin: 0;
+   height: 3rem;
+   border-radius:3px ;
+   text-transform: uppercase;
+   color: white;
+}
+.btn-show{
+   width: 80%;
+   margin: 1rem 20%;
+   display: flex;
+   flex-direction: column ;
+   height: 45px;
+   padding: 25px;
+   text-transform: uppercase;
+   color: white;
+   background-color: rgb(255, 63, 229);
+   border: 0;
+   border-radius: 5px; 
+   justify-content: center;
+   align-items: center;  
+}
+.btn-hide{
+   width: 80%;
+   margin: 1rem 20%;
+   display: flex;
+   flex-direction: column ;
+   height: 45px;
+   padding: 25px;
+   text-transform: uppercase;
+   color: white;
+   background-color: rgb(255, 21, 21);
+   border: 0;
+   border-radius: 5px; 
+   justify-content: center;
+   align-items: center;
+}
+table{
+   background-color: white;
+   text-align: left;
+   width: 100% auto;
+   color: black;
+   border-collapse: collapse;
+   }
+th, td{
+   padding: 20px;
+}
+thead{
+   background-color: rgb(95, 9, 140 );
+   border-bottom: solid 5px rgb(168, 54, 229);
+}
+
+tr:nth-child(even){
+   background-color: rgb(170, 126, 194);
+}
+
+tr:hover td{
+   background-color: rgb(202, 148, 231 );
+}
+#table-date{
+   display: none;
+}
+#Scroll {
+    overflow:scroll;
+     height:400px;
+     width:500px;
+  }
